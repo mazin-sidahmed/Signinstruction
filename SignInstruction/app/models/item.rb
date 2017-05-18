@@ -1,3 +1,7 @@
 class Item < ApplicationRecord
-  belongs_to :signlanginstructions
+  # model association
+ belongs_to :signlanginstructions
+
+ # validation
+ validates_presence_of :name
 end
