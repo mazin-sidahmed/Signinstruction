@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Word</th>
+      <th>Sign</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,6 +15,7 @@
     <% @instructions.each do |instruction| %>
       <tr>
         <td><%= instruction.word %></td>
+        <td><%= instruction.sign %></td>
         <td><%= link_to 'Show', instruction %></td>
         <td><%= link_to 'Edit', edit_instruction_path(instruction) %></td>
         <td><%= link_to 'Destroy', instruction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
