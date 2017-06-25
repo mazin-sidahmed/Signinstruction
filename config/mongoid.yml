@@ -9,7 +9,7 @@ development:
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - ds113702.mlab.com:13702
+        - localhost:27017
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
@@ -24,10 +24,10 @@ development:
         #     - use: web
 
         # The name of the user for authentication.
-        user: 'dev_user'
+        # user: 'dev_user'
 
         # The password of the user for authentication.
-        password: 'n8E3SbQCBL'
+        # password: 'n8E3SbQCBL'
 
         # The user's database roles.
         # roles:
