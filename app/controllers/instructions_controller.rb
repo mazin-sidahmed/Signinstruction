@@ -54,7 +54,7 @@ def search
   words = sentence.split(" ")
   instructions = Instruction.find(words)
 
-  render json: instructions.collect{|instruction| instruction.sign}
+  render json: instructions
 end
 
   private
