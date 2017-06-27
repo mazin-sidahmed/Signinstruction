@@ -61,6 +61,11 @@ class InstructionsController < ApplicationController
     end
   end
 
+def search
+  render json: [params[:q]]
+
+end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_instruction
