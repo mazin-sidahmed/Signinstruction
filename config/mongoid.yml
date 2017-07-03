@@ -138,12 +138,9 @@ development:
 test:
   clients:
     default:
-      database: signlanguage
-      hosts:
-        - ds113702.mlab.com:13702
+      uri: mongodb://dev_user:n8E3SbQCBL@ds113702.mlab.com:13702/signlanguage
       options:
-        user: 'dev_user'
-        password: 'n8E3SbQCBL'
         read:
           mode: :primary
         max_pool_size: 1
+        connect_timeout: 15
