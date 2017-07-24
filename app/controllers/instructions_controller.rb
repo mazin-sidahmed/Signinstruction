@@ -13,6 +13,7 @@ class InstructionsController < ApplicationController
   end
 
   def edit
+    @instruction = Instruction.find(params[:id])
   end
 
   def create
