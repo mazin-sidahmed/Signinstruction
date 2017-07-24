@@ -52,7 +52,7 @@ class InstructionsController < ApplicationController
 def search
   sentence = params[:q]
   words = sentence.split(" ")
-  instructions = Instruction.find(words)
+  instructions = Instruction.search_for(words)
 
   render json: instructions
 end

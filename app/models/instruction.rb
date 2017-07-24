@@ -5,7 +5,7 @@ class Instruction
   field :word, type: String
   field :sign, type: String
 
-  def self.find(words)
+  def self.search_for(words)
     signs = []
     instructions = Instruction.where(:word.in => words).to_a
     words.each do |word|
